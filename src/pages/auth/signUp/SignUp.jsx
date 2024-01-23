@@ -6,6 +6,8 @@ const SignUp = () => {
         <div className='row d-flex'>
             <div className='wellcome-signUp col-sm-7 bg-success'>
                 <div>
+                    <h1> Welcome to monday.com </h1>
+                    <h3> Get started - it's free. No credit card needed. </h3>
                     <button type="button" 
                         aria-label="Continue with Google" 
                         aria-pressed="false"><img class="Q2rN3" 
