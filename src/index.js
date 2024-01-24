@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
+// import './index.scss';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
+import './styles/SignUp.scss'
 
 // redux store
 import { Provider } from 'react-redux';
