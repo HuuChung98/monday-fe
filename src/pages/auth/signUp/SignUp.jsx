@@ -1,7 +1,36 @@
 import React from 'react';
-import { Input, Button } from 'antd';
+import { Input, Form ,Button, message } from 'antd';
+
+
+const onFinish = (value) => {
+
+};
+
+const validateEmail = (rule, value, callback) => {
+    if (value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+      callback('Please enter a valid email address');
+    } else {
+      callback();
+    }
+  };
+
+// const validateMessages = {
+//     required: 'Please enter a valid email address',
+//     types: {
+//         email: 'Please enter a valid email address'
+//     }
+// }
+const handleEmail = (value) => {
+    if (!value) {
+        return 'Please enter a valid email address'
+      } 
+      else {
+        console.log(value);
+      }
+}
 
 const SignUp = () => {
+
   return (
         <div className='viewPage'>
             <div className='wellcome-signUp'>
@@ -28,12 +57,38 @@ const SignUp = () => {
                         <div className="line-2"></div>
                     </div>
                     <div className='d-flex justify-content-center mx-2'>
-                        <Input placeholder="name@company.com" className='button__1 inputEmail'/>
+                        {/* <Input placeholder="name@company.com" className='button__1 inputEmail'/> */}
+                        <Form 
+                            name='email'
+                            initialValues={{ remember: true}}
+                            onFinish={onFinish}
+                            // onFinishFailed={onFinishFailed}
+                            autoComplete='off'
+                            // validateMessages={validateMessages}
+                        >
+                            <Form.Item 
+                                // label="name@company.com"
+                                name={['email']}
+                                rules={[
+                                    {
+                                      required: true,
+                                      message: 'Please enter a valid email address',
+                                    },
+                                    {
+                                      validator: validateEmail,
+                                    },
+                                  ]}
+                            >
+                                <Input placeholder="name@company.com" className='button__1 inputEmail'/>
+
+                            </Form.Item>
+                            <div className='d-flex justify-content-center my-3'>
+                                <Button type="primary" className='button__1 ' htmlType="submit" onClick={handleEmail}> Continue </Button>
+                            </div>
+
+                        </Form>
                     </div>
-                    <div className='d-flex justify-content-center my-3'>
-                        <Button type="primary" className='button__1 '> Continue </Button>
-                    </div>
-            
+
                     <div className='contextPolicyService'>
                         <div>
                             <span>
