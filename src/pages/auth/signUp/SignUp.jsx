@@ -112,7 +112,7 @@ const SignUp = () => {
             </div>
 
                 {/* Right  */}
-            <div className='background-form '>
+            <div className='background-form'>
                 <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset"/>
             </div>
         </div>
