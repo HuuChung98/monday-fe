@@ -1,5 +1,6 @@
 import React from 'react';
-import { Input, Form ,Button, message } from 'antd';
+import { Input, Form, Button, message } from 'antd';
+import '../../../styles/SignUp.scss'
 
 
 const onFinish = (value) => {
@@ -8,30 +9,24 @@ const onFinish = (value) => {
 
 const validateEmail = (rule, value, callback) => {
     if (value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      callback('Please enter a valid email address');
+        callback('Please enter a valid email address');
     } else {
-      callback();
+        callback();
     }
-  };
+};
 
-// const validateMessages = {
-//     required: 'Please enter a valid email address',
-//     types: {
-//         email: 'Please enter a valid email address'
-//     }
-// }
 const handleEmail = (value) => {
     if (!value) {
         return 'Please enter a valid email address'
-      } 
-      else {
+    }
+    else {
         console.log(value);
-      }
+    }
 }
 
 const SignUp = () => {
 
-  return (
+    return (
         <div className='viewPage'>
             <div className='wellcome-signUp'>
                 <div className='form__choose d-flex justify-content-center align-items-center flex-column'>
@@ -40,46 +35,46 @@ const SignUp = () => {
                         <h2 > Get started - it's free. No credit card needed. </h2>
                     </div>
                     <div className='d-flex justify-content-center'>
-                        <button type="button" 
+                        <button type="button"
                             className='button__google d-flex justify-content-center align-items-center button__1'
-                            aria-label="Continue with Google" 
+                            aria-label="Continue with Google"
                             aria-pressed="false"
                         >
-                            <img className="Q2rN3" 
-                            alt="Continue with Google" 
-                            src="https://dapulse-res.cloudinary.com/image/upload/remote_logos/995426/google-icon.svg"/>
+                            <img className="Q2rN3"
+                                alt="Continue with Google"
+                                src="https://dapulse-res.cloudinary.com/image/upload/remote_logos/995426/google-icon.svg" />
                             <span className='mx-1'>Continue with Google</span>
                         </button>
                     </div>
                     <div className='e6bug'>
-                        <div className="line-1"></div> 
-                            Or 
+                        <div className="line-1"></div>
+                        Or
                         <div className="line-2"></div>
                     </div>
                     <div className='d-flex justify-content-center mx-2'>
                         {/* <Input placeholder="name@company.com" className='button__1 inputEmail'/> */}
-                        <Form 
+                        <Form
                             name='email'
-                            initialValues={{ remember: true}}
+                            initialValues={{ remember: true }}
                             onFinish={onFinish}
                             // onFinishFailed={onFinishFailed}
                             autoComplete='off'
-                            // validateMessages={validateMessages}
+                        // validateMessages={validateMessages}
                         >
-                            <Form.Item 
+                            <Form.Item
                                 // label="name@company.com"
                                 name={['email']}
                                 rules={[
                                     {
-                                      required: true,
-                                      message: 'Please enter a valid email address',
+                                        required: true,
+                                        message: 'Please enter a valid email address',
                                     },
                                     {
-                                      validator: validateEmail,
+                                        validator: validateEmail,
                                     },
-                                  ]}
+                                ]}
                             >
-                                <Input placeholder="name@company.com" className='button__1 inputEmail'/>
+                                <Input placeholder="name@company.com" className='button__1 inputEmail' />
 
                             </Form.Item>
                             <div className='d-flex justify-content-center my-3'>
@@ -97,27 +92,27 @@ const SignUp = () => {
                         </div>
                         <div>
                             <span>
-                                <a className='line'> Terms of Service </a> 
-                                and 
+                                <a className='line'> Terms of Service </a>
+                                and
                                 <a href="" className='line'> Privacy Policy </a>
                             </span>
                         </div>
                     </div>
                 </div>
                 <div className='d-flex justify-content-center foot'>
-                    <p> Already have an account? 
+                    <p> Already have an account?
                         <a href='' className='line'> Log in </a>
                     </p>
                 </div>
             </div>
 
-                {/* Right  */}
+            {/* Right  */}
             <div className='background-form '>
-                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset"/>
+                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset" />
             </div>
         </div>
         // </div>
-  )
+    )
 }
 
 export default SignUp
