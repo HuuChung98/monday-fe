@@ -1,11 +1,12 @@
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .container {
     height: 100%;
     width: 100%;
 }
+
 .viewPage {
     display: grid;
     grid-template-columns: auto 40%;
@@ -15,9 +16,10 @@
 
 .form__choose {
     margin: 90px 0;
-}
-.e6bug {
-    // width: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .Q2rN3 {
@@ -39,17 +41,23 @@
 }
 
 .button__google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 7px;
     border-color: #c3c6d4
-
 }
 
 .button__google:hover {
     background-color: #c3c6d4;
 }
 
-.wellcome-signUp {
+.google__icon {
+    margin-left: 1%;
+}
+
+.wellcome__signUp {
     margin-top: 110px;
 }
 
@@ -57,6 +65,12 @@
     text-align: center;
     margin: 48px;
 }
+
+.wellcome__content {
+    display: flex;
+    justify-content: center;
+}
+
 .wellcome__heading h1 {
     font: 500 32px/40px;
     color: #323338;
@@ -68,6 +82,7 @@
     font-weight: normal;
     color: #323338;
 }
+
 .e6bug {
     display: grid;
     gap: 8px;
@@ -90,10 +105,23 @@
     height: 50%;
 }
 
+.content__form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.div__continue {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
 .button__1 {
     height: 40px;
     width: 400px;
 }
+
 .line {
     text-decoration: none;
 }
@@ -103,6 +131,9 @@
     display: flex;
     flex-direction: column;
 }
+
 .foot {
+    display: flex;
+    justify-content: center;
     margin-top: 250px;
 }

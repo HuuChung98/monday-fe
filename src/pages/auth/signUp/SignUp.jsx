@@ -28,22 +28,22 @@ const SignUp = () => {
 
     return (
         <div className='viewPage'>
-            <div className='wellcome-signUp'>
-                <div className='form__choose d-flex justify-content-center align-items-center flex-column'>
+            <div className='wellcome__signUp'>
+                <div className='form__choose '>
                     <div className='wellcome__heading'>
                         <h1 className=''> Welcome to monday.com </h1>
                         <h2 > Get started - it's free. No credit card needed. </h2>
                     </div>
-                    <div className='d-flex justify-content-center'>
+                    <div className='wellcome__content'>
                         <button type="button"
-                            className='button__google d-flex justify-content-center align-items-center button__1'
+                            className='button__google button__1'
                             aria-label="Continue with Google"
                             aria-pressed="false"
                         >
                             <img className="Q2rN3"
                                 alt="Continue with Google"
                                 src="https://dapulse-res.cloudinary.com/image/upload/remote_logos/995426/google-icon.svg" />
-                            <span className='mx-1'>Continue with Google</span>
+                            <span className='google__icon'>Continue with Google</span>
                         </button>
                     </div>
                     <div className='e6bug'>
@@ -51,7 +51,7 @@ const SignUp = () => {
                         Or
                         <div className="line-2"></div>
                     </div>
-                    <div className='d-flex justify-content-center mx-2'>
+                    <div className='content__form'>
                         {/* <Input placeholder="name@company.com" className='button__1 inputEmail'/> */}
                         <Form
                             name='email'
@@ -77,7 +77,7 @@ const SignUp = () => {
                                 <Input placeholder="name@company.com" className='button__1 inputEmail' />
 
                             </Form.Item>
-                            <div className='d-flex justify-content-center my-3'>
+                            <div className='div__continue'>
                                 <Button type="primary" className='button__1 ' htmlType="submit" onClick={handleEmail}> Continue </Button>
                             </div>
 
@@ -99,7 +99,7 @@ const SignUp = () => {
                         </div>
                     </div>
                 </div>
-                <div className='d-flex justify-content-center foot'>
+                <div className='foot'>
                     <p> Already have an account?
                         <a href='' className='line'> Log in </a>
                     </p>
