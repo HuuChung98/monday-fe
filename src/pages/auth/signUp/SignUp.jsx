@@ -25,7 +25,6 @@ const handleEmail = (value) => {
 }
 
 const SignUp = () => {
-
     return (
         <div className='viewPage'>
             <div className='wellcome__signUp'>
@@ -80,7 +79,6 @@ const SignUp = () => {
                             <div className='div__continue'>
                                 <Button type="primary" className='button__1 ' htmlType="submit" onClick={handleEmail}> Continue </Button>
                             </div>
-
                         </Form>
                     </div>
 

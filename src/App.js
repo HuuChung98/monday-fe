@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import SignUp from './pages/auth/signUp/SignUp';
+import CreateSecondPage from './pages/auth/signUp/CreateSecondPage';
 
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path='sign-up' element={<SignUp></SignUp>}></Route>
+        <Route path='users/invitation/accept/second' element={<CreateSecondPage></CreateSecondPage>}></Route>
       </Routes>
     </>
   );
