@@ -137,6 +137,7 @@
     justify-content: center;
     margin-top: 250px;
 }
+
 // ################################
 
 .view__container {
@@ -153,9 +154,10 @@
     margin: 0;
     padding: 0;
 }
+
 .left {
     width: 60%;
-} 
+}
 
 .right {
     height: 100%;
@@ -165,6 +167,7 @@
 .viewPage__left__outside {
     height: 100%;
     width: 100%;
+    padding: 10%;
 }
 
 .formCover {
@@ -185,10 +188,11 @@
 .logo {
     width: 100%;
 }
+
 .logo__img {
     height: 24px;
     margin-bottom: 10%;
-} 
+}
 
 .title {
     margin-bottom: 5%;
@@ -205,16 +209,21 @@
     border-radius: 10px;
     border: 1px solid #c3c6d4;
 }
+
 .div__button {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-right: 2%;
 }
 
 .button__continue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #0073ea;
-    color: whitesmoke;
-    width: 17%;
+    // color: whitesmoke;
+    width: 20%;
     height: 35px;
     border: 1px solid #c3c6d4;
     border-radius: 5px;
@@ -225,10 +234,12 @@
     width: 100%;
     height: 100%;
 }
+
 .full__screen__side__image {
     height: 100%;
     width: 100%;
 }
+
 // #####################
 .form__info {
     width: 100%;
@@ -243,11 +254,61 @@
     justify-content: space-between;
 }
 
+.left__content {
+    padding-bottom: 10%;
+    height: 100%;
+}
+
 .what__brings {
     display: flex;
     // justify-content: space-around;
 }
 
 .best__describes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 100%;
+}
+
+.best__role {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    height: 100px;
+    width: 100%;
+}
+
+.my__radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c3c6d5;
+    border-radius: 30px;
+    margin-right: 5%;
+    padding: 2% 2%;
+}
+
+.radio__1 {
+    height: 200px;
+}
+
+.title__radio {
+    margin-bottom: 5%;
+}
+
+.radio_role {
+    height: 40px;
+}
+
+.field {
+    margin-right: 10px;
+}
+.role {
     display: flex;
 }
