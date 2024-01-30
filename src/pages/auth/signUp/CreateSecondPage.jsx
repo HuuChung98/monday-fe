@@ -75,9 +75,9 @@ const CreateSecondPage = () => {
       <div className='viewPage__content'>
         <div className="left">
           <div className='left__content'>
-            <div className='viewPage__left__outside'>
+            <div className='viewPage__left__outside__second__page'>
               <div className='logo'>
-                <img className="logo__img" alt="logo" src="https://cdn.monday.com/images/logos/logo-full-big.png" />
+                <img className="logo__img_second_page" alt="logo" src="https://cdn.monday.com/images/logos/logo-full-big.png" />
               </div>
               <div className='form__info'>
                 <Formik
@@ -101,7 +101,7 @@ const CreateSecondPage = () => {
                             {PURPOSE.map(item => (
                               <label className='radio'>
                                 <Field className='field' type="radio" name="picked" value={item.key} onClick={() => handleSelected(item.key, item.value)} />
-                                {item.key}
+                                <p className='text'>{item.key}</p>
                               </label>
                             ))}
                           </div>
@@ -114,7 +114,7 @@ const CreateSecondPage = () => {
                             {showRole.map(item => (
                               <label className='radio radio_role'>
                                 <Field className='field' type="radio" name="picked1" value={item} onClick={handleSelectedRole} />
-                                {item}
+                                <p className='text'>{item}</p>
                               </label>
                             ))}
                           </div>
