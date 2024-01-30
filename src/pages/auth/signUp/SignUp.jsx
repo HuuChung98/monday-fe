@@ -92,7 +92,7 @@ const SignUp = () => {
                         </div>
                         <div>
                             <span>
-                                <a className='line'> Terms of Service </a>
+                                <a href='' className='line'> Terms of Service </a>
                                 and
                                 <a href="" className='line'> Privacy Policy </a>
                             </span>
