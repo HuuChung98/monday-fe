@@ -189,6 +189,9 @@
 }
 
 .button__continue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #0073ea;
     color: whitesmoke;
     width: 17%;
