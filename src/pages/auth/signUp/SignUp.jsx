@@ -107,9 +107,15 @@ const SignUp = () => {
                 </div>
             </div>
 
+<<<<<<< HEAD
             {/* Right  */}
             <div className='background-form '>
                 <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset" />
+=======
+                {/* Right  */}
+            <div className='background-form'>
+                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset"/>
+>>>>>>> chungDev/createAccount-page
             </div>
         </div>
         // </div>

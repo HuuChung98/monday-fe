@@ -2,6 +2,8 @@
     display: none;
 }
 
+
+
 .container {
     height: 100%;
     width: 100%;
@@ -16,10 +18,6 @@
 
 .form__choose {
     margin: 90px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .Q2rN3 {
@@ -39,6 +37,7 @@
     width: 100%;
 
 }
+
 
 .button__google {
     display: flex;
@@ -64,11 +63,6 @@
 .wellcome__heading {
     text-align: center;
     margin: 48px;
-}
-
-.wellcome__content {
-    display: flex;
-    justify-content: center;
 }
 
 .wellcome__heading h1 {
@@ -136,4 +130,107 @@
     display: flex;
     justify-content: center;
     margin-top: 250px;
+}
+
+
+// ##################
+
+.view__container {
+    width: 100%;
+    height: 100vh;  /* 100% của viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewPage__content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    height: 100%;
+    width: 40%;
+}
+
+.viewPage__left__outside {
+    height: 100%;
+    width: 100%;
+}
+
+.formCover {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+
+.formInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo__img {
+    height: 24px;
+    margin-bottom: 10%;
+}
+
+.title {
+    margin-bottom: 5%;
+}
+
+.forInput {
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.inputForm {
+    height: 45px;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid #c3c6d4;
+}
+
+.div__button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button__continue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0073ea;
+    color: whitesmoke;
+    width: 17%;
+    height: 35px;
+    border: 1px solid #c3c6d4;
+    border-radius: 5px;
+
+}
+
+.cover__image {
+    width: 100%;
+    height: 100%;
+}
+
+.full__screen__side__image {
+    height: 100%;
+    width: 100%;
 }
