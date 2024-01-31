@@ -2,8 +2,6 @@
     display: none;
 }
 
-
-
 .container {
     height: 100%;
     width: 100%;
@@ -77,12 +75,22 @@
     color: #323338;
 }
 
+.wellcome__content {
+    display: flex;
+    justify-content: center;
+}
+
 .e6bug {
     display: grid;
     gap: 8px;
     grid-template-columns: 1fr auto 1fr;
     margin: 16px;
     width: 400px;
+}
+
+.line__1__2 {
+    display: flex;
+    justify-content: center;
 }
 
 .e6bug .line-1 {

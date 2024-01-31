@@ -2,11 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
-<<<<<<< HEAD
 import './styles/SignUp.scss'
-=======
-
->>>>>>> chungDev/createAccount-page
 
 // redux store
 import { Provider } from 'react-redux';

@@ -47,10 +47,12 @@ const SignUp = () => {
                             <span className='google__icon'>Continue with Google</span>
                         </button>
                     </div>
-                    <div className='e6bug'>
-                        <div className="line-1"></div>
-                        Or
-                        <div className="line-2"></div>
+                    <div className='line__1__2'>
+                        <div className='e6bug'>
+                            <div className="line-1"></div>
+                            <span>Or</span>
+                            <div className="line-2"></div>
+                        </div>
                     </div>
                     <div className='content__form'>
                         {/* <Input placeholder="name@company.com" className='button__1 inputEmail'/> */}
@@ -107,15 +109,9 @@ const SignUp = () => {
                 </div>
             </div>
 
-<<<<<<< HEAD
             {/* Right  */}
-            <div className='background-form '>
-                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset" />
-=======
-                {/* Right  */}
             <div className='background-form'>
-                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset"/>
->>>>>>> chungDev/createAccount-page
+                <img className="O1nZl" src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png" alt="Background" data-testid="right-side-asset" />
             </div>
         </div>
         // </div>
