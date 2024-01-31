@@ -224,6 +224,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .button__continue {
     display: flex;
     justify-content: space-around;
@@ -244,6 +245,7 @@
 .button__back:hover {
     background-color: #c3c6d4;
 }
+
 .button__back {
     display: flex;
     justify-content: space-around;
@@ -253,7 +255,7 @@
     height: 35px;
     border: 1px solid #989aa2;
     border-radius: 5px;
-    
+
 }
 
 .cover__image {

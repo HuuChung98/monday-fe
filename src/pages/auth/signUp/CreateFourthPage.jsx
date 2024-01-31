@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, Field, Form } from 'formik';
+
+import { positive_arrow, negative_arrow } from '../../../constant/constant';
 import '../../../styles/SignUp.scss';
 
 const EXPERIENCES = [
@@ -51,10 +53,6 @@ const EXPERIENCES = [
 
 const CreateFourthPage = () => {
 
-    const [showButtonStatus, setShowButton] = useState('#0173ea');
-
-    const [colorText, setColorText] = useState('#ffffff');
-
     const handleSelected = (key, value) => {
     };
 
@@ -101,14 +99,14 @@ const CreateFourthPage = () => {
                                                     className='button__back'
                                                 >
                                                     Back
-                                                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true" class="icon_d24b689566 leftIcon_9131a496c3 noFocusStyle_07ecef1878" data-testid="icon"><path d="M7.46967 10.5303L8 10L7.46967 9.46967C7.17678 9.76256 7.17678 10.2374 7.46967 10.5303ZM9.06066 10L12.5303 6.53033C12.8232 6.23744 12.8232 5.76256 12.5303 5.46967C12.2374 5.17678 11.7626 5.17678 11.4697 5.46967L7.46967 9.46967L8 10L7.46967 10.5303L11.4697 14.5303C11.7626 14.8232 12.2374 14.8232 12.5303 14.5303C12.8232 14.2374 12.8232 13.7626 12.5303 13.4697L9.06066 10Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true" class="icon_d24b689566 leftIcon_9131a496c3 noFocusStyle_07ecef1878" data-testid="icon"><path d={positive_arrow} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                                                 </button>
                                                 <button
                                                     type="submit"
                                                     className='button__continue'
                                                 >
                                                     Continue
-                                                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true" class="icon_d24b689566 rightIcon_9e105f47e8 noFocusStyle_07ecef1878" data-testid="icon"><path d="M12.5303 9.46967L12 10L12.5303 10.5303C12.8232 10.2374 12.8232 9.76256 12.5303 9.46967ZM10.9393 10L7.46967 13.4697C7.17678 13.7626 7.17678 14.2374 7.46967 14.5303C7.76256 14.8232 8.23744 14.8232 8.53033 14.5303L12.5303 10.5303L12 10L12.5303 9.46967L8.53033 5.46967C8.23744 5.17678 7.76256 5.17678 7.46967 5.46967C7.17678 5.76256 7.17678 6.23744 7.46967 6.53033L10.9393 10Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20" aria-hidden="true" class="icon_d24b689566 rightIcon_9e105f47e8 noFocusStyle_07ecef1878" data-testid="icon"><path d={negative_arrow} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                                                 </button>
 
                                             </div>
