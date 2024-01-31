@@ -218,6 +218,12 @@
     margin-right: 2%;
 }
 
+
+.div__button__back__continue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .button__continue {
     display: flex;
     justify-content: space-around;
@@ -227,7 +233,27 @@
     height: 35px;
     border: 1px solid #c3c6d4;
     border-radius: 5px;
+    color: #ffffff;
+}
 
+.button__continue:hover {
+    background-color: #0060b9;
+    ;
+}
+
+.button__back:hover {
+    background-color: #c3c6d4;
+}
+.button__back {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    width: 15%;
+    height: 35px;
+    border: 1px solid #989aa2;
+    border-radius: 5px;
+    
 }
 
 .cover__image {
@@ -310,6 +336,17 @@
     padding-right: 5px;
 }
 
+.checkbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #c3c6d5;
+    border-radius: 30px;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    padding-right: 5px;
+}
+
 .radio__1 {
     height: 200px;
 }
@@ -319,7 +356,11 @@
 }
 
 .title__radio {
+    padding: 0;
     margin-bottom: 5%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Poppins, Roboto, Noto Sans Hebrew, Noto Kufi Arabic, Noto Sans JP, sans-serif;
 }
 
 .radio_role {
