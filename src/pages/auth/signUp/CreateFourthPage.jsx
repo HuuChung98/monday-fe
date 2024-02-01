@@ -81,14 +81,14 @@ const CreateFourthPage = () => {
                                         <Form className='radio__choose'>
                                             <div className='my__radio'>
                                                 <div id="my__radio1__group" className='radio__1'>
-                                                    <h2 className='title__radio'>
+                                                    <h2 className='title__radio font'>
                                                         One last question, how did you hear about us?
                                                     </h2>
                                                     <div className='best__describes'>
                                                         {EXPERIENCES.map(item => (
                                                             <label className='checkbox' key={item.id}>
                                                                 <Field className='field' type="checkbox" name="checked" value={item.value} onClick={() => handleSelected(item.key, item.value)} />
-                                                                <p className='text'>{item.value}</p>
+                                                                <span className='text__font'>{item.value}</span>
                                                             </label>
                                                         ))}
                                                     </div>
